@@ -11,9 +11,9 @@ jobs:
       - name: Publish Helm chart
         uses: stefanprodan/helm-gh-pages@master
         with:
-          token: ${{ secrets.BOT_GITHUB_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
           charts_dir: chart
-          charts_url: https://charts.fluxcd.io
-          owner: fluxcd
-          repository: charts
+          charts_url: https://neticdk.github.io/helm-operator
+          owner: neticdk
+          repository: helm-operator
           branch: gh-pages
